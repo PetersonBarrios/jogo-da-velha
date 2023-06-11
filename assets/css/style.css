@@ -1,0 +1,156 @@
+/* Estilo Geral */
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3f87c2;
+}
+
+/* Seleção de estilos */
+
+.selection {
+    padding: 50px 80px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    text-align: center;
+    box-shadow: 6px 4px 20px rgba(0, 0, 0, .1),
+                inset 6px 4px 12px rgba(0, 0, 0, .1);
+}
+
+
+.selection h2 {
+    color: #2d699b;
+    font-size: 4rem;
+    font-weight: 600;
+    font-variant: small-caps;
+}
+
+.selection p {
+    color: #4678a0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-variant: small-caps;
+    margin-top: 30px;
+}
+
+.selection .players {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.selection .players .player {
+    cursor: pointer;
+    color: #2d699b;
+    width: 5.5rem;
+    height: 4rem;
+    margin: 0 4px;
+    font-size: 2rem;
+    border-radius: 4px;
+    border: 3px solid #3f87c2;
+    transition: .4s;
+}
+
+.selection .players .player:hover {
+    color: #fff;
+    background: #3f87c2;
+}
+
+
+.fadeOut {
+    animation: hide .3s linear alternate;
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+
+.fadeIn {
+    animation: show .3s linear alternate;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.play-board {
+    display: none;
+    padding: 30px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    text-align: center;
+    box-shadow: 6px 4px 20px rgba(0, 0, 0, .1),
+                inset 6px 4px 12px rgba(0, 0, 0, .1);
+}
+
+table td {
+    width: 3em;
+    height: 3em;
+    font-size: 2em;
+    text-align: center;
+    background: #abceeb;     /* cor de fundo */
+    border: 2px solid #f9f9f9;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .4s linear;
+}
+
+.reset {
+    cursor: pointer;
+    color: #2d699b;
+    padding: 8px 18px;
+    margin-top: 30px;
+
+    font-size: 1.5rem;
+    border-radius: 4px;
+    border: 3px solid #3f87c2;
+    transition: .4s;
+}
+
+.reset:hover {
+    color: #fff;
+    background: #3f87c2;
+}
+
+.winner {
+    display: none;
+    padding: 40px 50px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    text-align: center;
+    box-shadow: 6px 4px 20px rgba(0, 0, 0, .1),
+                inset 6px 4px 12px rgba(0, 0, 0, .1);
+
+}
+
+.winner h3 {
+    font-size: 30px;
+    font-weight: 500;
+    font-variant: small-caps;
+}
